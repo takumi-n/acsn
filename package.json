@@ -1,0 +1,20 @@
+{
+  "name": "acsn",
+  "version": "1.0.0",
+  "description": "acsn is an acronym for Asana Comment Slack Notification",
+  "main": "index.js",
+  "repository": "https://github.com/takumi-n/acsn",
+  "author": "takumi-n",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@slack/webhook": "^6.1.0",
+    "asana": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
