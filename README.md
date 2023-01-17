@@ -29,8 +29,8 @@ $ cp .env.sample .env
 - Must start with `https://`
 - Must not end with `/`
 
-OK: https://foo.bar
-NG: https://foo.bar/ http://foo.bar
+- OK: https://foo.bar
+- NG: https://foo.bar/ http://foo.bar
 
 3. Run
 
