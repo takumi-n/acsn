@@ -1,7 +1,7 @@
 # acsn
 
 acsn is an acronym for Asana Comment Slack Notification.  
-acsn sends notifications to your Slack channel when Asana tasks are commented on
+acsn sends notifications to your Slack channel when Asana tasks are commented on.
 
 ## Usage
 
