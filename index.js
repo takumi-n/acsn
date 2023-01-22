@@ -13,7 +13,6 @@ async function main() {
   const app = webhookApp(opts);
 
   app.startServer(process.env.PORT || 8080);
-  app.startWebhook();
 }
 
 main();
