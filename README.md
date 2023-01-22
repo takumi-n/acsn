@@ -3,6 +3,8 @@
 acsn is an acronym for Asana Comment Slack Notification.  
 acsn sends notifications to your Slack channel when Asana tasks are commented on.
 
+[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
+
 ## Usage
 
 1. Install deps
