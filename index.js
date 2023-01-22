@@ -1,4 +1,4 @@
-const webhookApp = require('./lib/webhookApp');
+const app = require('./lib/app');
 
 require('dotenv').config();
 
@@ -10,9 +10,8 @@ async function main() {
     workspaceId: process.env.ASANA_WORKSPACE_ID,
     projectId: process.env.ASANA_PROJECT_ID,
   };
-  const app = webhookApp(opts);
 
-  app.startServer(process.env.PORT || 8080);
+  app(opts).startServer(process.env.PORT || 8080);
 }
 
 main();
