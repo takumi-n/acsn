@@ -1,20 +1,18 @@
 const webhookHandler = require('./lib/webhookHandler');
+const db = require('@cyclic.sh/dynamodb');
 
 require('dotenv').config();
 
-let secret;
-
 async function main() {
+  const collection = db.collection('options');
   const opts = {
     baseUrl: process.env.BASE_URL,
     asanaPat: process.env.ASANA_PAT,
     slackWebhookUrl: process.env.SLACK_WEBHOOK_URL,
     workspaceId: process.env.ASANA_WORKSPACE_ID,
     projectId: process.env.ASANA_PROJECT_ID,
-    storeSecret: (s) => {
-      secret = s;
-    },
-    getSecret: () => secret,
+    storeSecret: (secret) => collection.set('asanaWebhookSecret', { secret }),
+    getSecret: () => collection.get('asanaWebhookSecret').then((s) => s.props.secret),
   };
   const handler = webhookHandler(opts);
 
