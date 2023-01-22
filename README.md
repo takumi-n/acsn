@@ -23,9 +23,9 @@ $ cp .env.sample .env
 |-|-|
 |ASANA_PAT|[Asana personal access token](https://developers.asana.com/docs/personal-access-token)|
 |BASE_URL|Your server base url|
-|WORKSPACE_ID|Your Asana workspace ID|
-|PROJECT_ID|Your Asana project ID|
-|WEBHOOK_URL|Webhook URL for your Slack|
+|ASANA_WORKSPACE_ID|Your Asana workspace ID|
+|ASANA_PROJECT_ID|Your Asana project ID|
+|SLACK_WEBHOOK_URL|Webhook URL for your Slack|
 
 **`BASE_URL` format**
 
