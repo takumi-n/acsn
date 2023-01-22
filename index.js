@@ -8,9 +8,9 @@ async function main() {
   const opts = {
     baseUrl: process.env.BASE_URL,
     asanaPat: process.env.ASANA_PAT,
-    slackWebhookUrl: process.env.WEBHOOK_URL,
-    workspaceId: process.env.WORKSPACE_ID,
-    projectId: process.env.PROJECT_ID,
+    slackWebhookUrl: process.env.SLACK_WEBHOOK_URL,
+    workspaceId: process.env.ASANA_WORKSPACE_ID,
+    projectId: process.env.ASANA_PROJECT_ID,
     storeSecret: (s) => {
       secret = s;
     },
